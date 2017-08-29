@@ -1,0 +1,54 @@
+
+/* -------------------------------------------------------
+                      General Styling
+---------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* -------------------------------------------------------
+                      Navigation
+---------------------------------------------------------*/
+nav {
+   background-color: #25303B; 
+   font-family: 'Didact Gothic', sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+
+nav table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+nav table {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+nav td {  
+   padding: 10px; 
+}
+
+nav a:link,
+nav a:visited {
+   text-decoration: none;
+   color: white;
+}
+
+nav a:hover,
+nav a:click {
+   color: red;
+}
+
+
+
+
+
+
