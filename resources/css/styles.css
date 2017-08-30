@@ -18,6 +18,11 @@ body {
    background-color: white;
 }
 
+/*-- Container that holds the body of a section --*/
+.content {
+   margin-left: auto;
+   margin-right: auto;
+}
 
 
 /* -------------------------------------------------------
@@ -196,10 +201,7 @@ nav .active a:active {
 }
 
 /*-- Container for rest of section --*/
-.about-section .content {
-   margin-left: auto;
-   margin-right: auto;
-   
+.about-section .content {   
    width: 1000px;
 }
 
@@ -282,10 +284,7 @@ li .highlight {
    padding-bottom: 30px;
 }
 
-.video-section .video-container{
-   margin-left: auto;
-   margin-right: auto;
-   
+.video-section .content{   
    width: 960px;
 }
 
@@ -302,9 +301,15 @@ li .highlight {
                        Footer
 ---------------------------------------------------------*/
 
+footer {
+   background-color: #2B3844;
+   
+   height: 100000px;
+}
 
-
-
+footer .content{   
+   width: 960px;
+}
 
 
 

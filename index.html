@@ -18,7 +18,21 @@
     
    </head>    
    <body>
-           
+          
+      <!--  Facebook-required JavaScript SDK.
+            Needed for Facebook Like button.
+            https://developers.facebook.com/docs/plugins/like-button
+      -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      
+      
       <!--------------------------------------------
                       Header     
       ---------------------------------------------->
@@ -137,7 +151,7 @@
         
         
       <section class="video-section">
-         <div class="video-container">
+         <div class="content">
             <iframe src="https://player.vimeo.com/video/139369336"
                  frameborder="0"
                  webkitallowfullscreen mozallowfullscreen allowfullscreen>
@@ -146,16 +160,67 @@
       </section>  
          
 
-        
       <!--------------------------------------------
                           Footer
       ---------------------------------------------->       
         
+      
       <footer>
-
+         <div class="content">
+            
+            <div class="text-column">
+               <h3>
+                  Diptic for Mac
+               </h3>
+               <p>
+                  Diptic is also available as a
+                  <a href="http://mac.dipticapp.com/" target="parent">
+                  Mac desktop application</a>! Pick one of 56 layouts, and then select up to six photos from your computer or the Internet (Facebook, Flickr, etc.) to quickly create interesting photo collages to post on your blog, document special events, or share with friends and family. Diptic is a great quick-action app, and you’ll be creating collages within minutes of downloading it.
+               </p>
+               <p>
+                  Diptic App © 2010-2015 by
+                  <a href="http://www.uptopcorp.com/">
+                  UpTop
+                  </a>
+               </p>
+            </div>
+            
+            <div class="links-column">
+               <h3>
+                  Quick Links
+               </h3>
+               <ul>
+                  <li>
+                     <a href="http://www.dipticapp.com/support">
+                        FAQs/Application Support
+                     </a>
+                  </li>
+                  <li>
+                     <a href="http://www.flickr.com/groups/diptic/" target="parent">
+                        Flickr Group
+                     </a>
+                  </li>
+                  <li>
+                     <a href="http://www.facebook.com/dipticapp" target="parent">
+                        Facebook
+                     </a>
+                  </li>
+                  <li>
+                     <a href="http://twitter.com/dipticapp">
+                        Twitter
+                     </a>
+                  </li>
+               </ul>
+               
+               <!--  this is a Facebook Like button.  For info:
+                  https://developers.facebook.com/docs/plugins/like-button
+               -->
+               <div class="fb-like" data-href="https://www.facebook.com/dipticapp" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+            </div>
+            
+         </div>         
       </footer>
 
-        
    </body>  
     
 </html>
