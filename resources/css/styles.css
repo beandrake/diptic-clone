@@ -62,7 +62,7 @@ nav ul {
 }
 
 
-/*-- Simulated tabs --*/
+/*-- Each li is a tab --*/
 nav li {
    display: inline-block;
    
@@ -77,6 +77,7 @@ nav li {
 nav li:first-child {
    border-left: 1px solid #3E5266;
 }
+
 
 nav li a:link,
 nav li a:visited {
@@ -137,7 +138,6 @@ nav .active a:active {
 ---------------------------------------------------------*/
 
 .logo-strip {
-
    /* grey gradient at bottom of strip*/
    background-image:
     -webkit-gradient(
@@ -151,8 +151,11 @@ nav .active a:active {
       white, white, white, white, white, #ddd
     );
    
-   height: 135px;   
+   height: 135px;  
+   
    text-align: center;
+   overflow: hidden;
+   
    -webkit-box-shadow: 0px 2px 2px #aaa;
    box-shadow: 0px 2px 2px #aaa;
 }
@@ -168,6 +171,7 @@ nav .active a:active {
    
    width: 1036px;
    height: 100%;
+   
 }
 
 .logo-strip .picture-holder img {
@@ -193,6 +197,7 @@ nav .active a:active {
    display: inline-block;
    width: 100%;
    padding-bottom: 45px;
+   overflow-x: hidden;
 }
 
 
@@ -225,12 +230,13 @@ nav .active a:active {
 }
 
 /*-- Container for rest of section --*/
-.about-section .content {   
+.about-section .content { 
    width: 1020px;
+   overflow: hidden;     
 }
 
-/*-- Image on left --*/
-.about-section .image-column {
+.about-section .image-column,
+.about-section .text-column {
    display: inline-block;
    float: left;
 }
@@ -239,9 +245,6 @@ nav .active a:active {
 /*-- Text on the right --*/
 
 .about-section .text-column {
-   display: inline-block;
-   float: left;
-   
    padding-left: 40px;
    
    width: 570px;
@@ -301,6 +304,8 @@ li .highlight {
    
    padding-top: 30px;
    padding-bottom: 30px;
+   
+   overflow-x: hidden;
 }
 
 .video-section .content{   
@@ -321,32 +326,66 @@ li .highlight {
 ---------------------------------------------------------*/
 
 footer {
-   background-color: #2B3844;
+   display: inline-block;
+   background-color: #303D4A;
    color: white;
-   
-   height: 100000px;
+   width: 100%;
 }
 
 footer .content {
-   display: inline-block;
    width: 960px;
-}
-
-footer h2 {
    
+   padding-top: 30px;
 }
 
-footer .text-column {
-   display: inline-block;
-   float: left;
-   width: 400px;
+footer h3 {
+   font-size: 14px;
+   padding-bottom: 20px;
 }
 
+footer a {
+   text-decoration: none;
+   color: #13ACC0;
+}
+
+footer .text-column,
 footer .links-column {
    display: inline-block;
    float: left;
 }
 
+/*-- Text Column --*/
+
+footer .text-column {
+   width: 380px;
+}
+
+footer p {
+   padding-left: 12px;
+   padding-right: 80px;
+   
+   line-height: 140%;
+}
+footer p:last-child {
+   padding-top: 42px;
+   padding-bottom: 10px;
+}
+
+/*-- Links Column --*/
+
+footer ul {
+   padding-left: 10px;
+   padding-bottom: 10px;
+}
+
+footer li {
+   list-style: none;
+   padding-bottom: 10px;
+}
+
+footer .fb-like {
+   color: white;
+}
 
 
 
