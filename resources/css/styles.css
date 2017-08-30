@@ -21,31 +21,67 @@ nav {
    font-weight: bold;
 }
 
-
-nav table, th, td {
-    border: 1px solid grey;
-    border-collapse: collapse;
+nav ul {
+   text-align: center;
 }
 
-nav table {
-   margin-left: auto;
-   margin-right: auto;
+nav li {
+   display: inline-block;
+   list-style-position:inside;
+   border-left: 1px solid #3E5266;
 }
 
-nav td {  
-   padding: 10px; 
+nav li:last-child {
+   border-right: 1px solid #3E5266;
 }
 
-nav a:link,
-nav a:visited {
-   text-decoration: none;
+nav li a:link,
+nav li a:visited {
+   display: block;
    color: white;
+   text-align: center;
+   padding: 10px 14px;
+   text-decoration: none;
 }
 
-nav a:hover,
-nav a:click {
+nav li a:hover,
+nav li a:active {
    color: red;
 }
+
+
+/* active nav tab (this page) */
+
+.active {
+   background-color: white; 
+}
+
+.active a:link,
+.active a:visited {
+   text-decoration: none;
+   color: black;
+}
+
+.active a:hover,
+.active a:active {
+   color: red;
+}
+
+
+
+
+
+
+
+
+
+.space-for-scrollbar {
+   height: 1000px;
+}
+
+
+
+
 
 
 
