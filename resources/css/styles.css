@@ -69,6 +69,67 @@ nav li a:active {
 
 
 
+/* -------------------------------------------------------
+                      Logo Strip
+---------------------------------------------------------*/
+
+.logo-strip {
+
+   /* grey gradient at bottom of strip*/
+   background-image:
+    linear-gradient(
+      to bottom, 
+      white, 
+      white, 
+      white, 
+      white,
+      #ddd
+    );
+   
+   height: 135px;   
+   text-align: center;
+}
+
+.picture-holder {
+   display: inline-block;
+   
+   padding-top: 30px;
+   
+   padding-left: 65px;   
+   padding-right: 65px;
+   
+   width: 1020px;
+   height: 100%;
+}
+
+.picture-holder img {
+   vertical-align: middle;
+}
+
+.diptic-logo {
+   float: left;
+}
+
+.store-button {
+   margin-top: 10px;
+   float: right;
+}
+
+
+
+
+/* -------------------------------------------------------
+                    Main Content
+---------------------------------------------------------*/
+
+.main-content {
+   height: 100px;
+   width: 100%;
+}
+
+
+
+
 
 
 
