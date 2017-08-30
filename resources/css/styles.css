@@ -206,7 +206,7 @@ nav .active a:active {
 .about-section h2 {
    padding-top: 20px;
    padding-bottom: 20px;
-   padding-right: 80px;
+   padding-right: 90px;
 
    width: 965px;
    
@@ -264,12 +264,11 @@ nav .active a:active {
    padding-bottom: 14px;
    
    line-height: 140%;
-   word-spacing: 1px;
 }
 
 .about-section .prose {
    padding-top: 5px;
-   width: 530px;
+   width: 510px;
 }
 
 
@@ -371,6 +370,11 @@ footer p:last-child {
 }
 
 /*-- Links Column --*/
+
+footer .links-column {
+   display: inline-block;
+   width: 220px;
+}
 
 footer ul {
    padding-left: 10px;
